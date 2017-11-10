@@ -1,0 +1,32 @@
+
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Movie Review</title>
+	<link rel="stylesheet" type="text/css" href="./review-styles.css" />
+
+
+</head>
+
+<body>
+
+	<header>
+		<h1>The Owl's Review</h1>
+	</header>
+
+	<div>
+		<h2 th:text="${'Review ID: ' + review.id}"></h2>
+		<h2 th:text="${review.movieTitle}"></h2>
+		<section>
+			<img th:src="${review.images}"></img>
+			<h2 th:text="${review.movieCategory.categoryName}"></h2><!-- review class.accessor method.category class accessor methods -->
+		</section>
+		<section id="back">
+			<a href="http://localhost:8080/categories">Back to home</a>
+		</section>
+	</div>
+
+</body>
+</html>

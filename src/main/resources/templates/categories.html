@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Movie Reviews</title>
+<link rel="stylesheet" type="text/css" href="./review-styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1>Midnite Owl's Movie Reviews</h1>
+	</header>
+	<p>Thanks for visiting my movie review page!</p>
+	<div th:each="category: ${categories}"><!-- category(whateveryou want) {movieReviews}==link to @RequestMapping in controller- -->
+	
+<a th:href="@{/review(id=${category.id})}" th:text="${category.categoryName}"></a>
+			
+	</div>
+</body>
+</html>
