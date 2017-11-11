@@ -3,8 +3,9 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-<title>Movie Reviews</title>
-<link rel="stylesheet" type="text/css" href="./review-styles.css" />
+	<title>Movie Reviews</title>
+	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-styles.css" />
+	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-layout.css" />
 </head>
 
 <body>
@@ -12,10 +13,14 @@
 		<h1>Midnite Owl's Movie Reviews</h1>
 	</header>
 	<p>Thanks for visiting my movie review page!</p>
-	<div th:each="category: ${categories}"><!-- category(whateveryou want) {movieReviews}==link to @RequestMapping in controller- -->
-	
-<a th:href="@{/review(id=${category.id})}" th:text="${category.categoryName}"></a>
-			
+	<div th:each="category: ${categories}">
+	<!-- category(whatever you want to name it)
+	{categories}==link to @RequestMapping in controller- -->
+		
+		<a th:href="@{/category(id=${category.id})}" th:text="${category.categoryName}"></a>
+	<!--(link)/category==the name of the page being pointed to 
+		((id=${category.id})==go to the category class and get the id of the category
+		"${category.categoryName}" == list all the categories in category class by name-->	
 	</div>
 </body>
 </html>

@@ -24,9 +24,10 @@ public class Category {
 
 	}
 
-	public Category(String categoryName, String images) {
+	public Category(String categoryName, String images, Set<Review> movieReviews) {
 		this.categoryName = categoryName;
 		this.images = images;
+		this.movieReviews = movieReviews;
 	}
 
 	public Long getId() {

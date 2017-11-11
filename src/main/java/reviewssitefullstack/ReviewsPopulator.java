@@ -17,13 +17,13 @@ public class ReviewsPopulator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Category category1 = new Category("Sci-Fi", "/images/the-matrix.jpg");
+		Category category1 = new Category("Sci-Fi", "/images/the-matrix.jpg", null);
 		categoryRepo.save(category1);
-		Category category2 = new Category("Chick-Flicks", "/images/beaches.jpg");
+		Category category2 = new Category("Chick-Flicks", "/images/beaches.jpg", null);
 		categoryRepo.save(category2);
-		Category category3 = new Category("Comedy", "/images/dumb-and-dumber.jpg");
+		Category category3 = new Category("Comedy", "/images/dumb-and-dumber.jpg", null);
 		categoryRepo.save(category3);
-		Category category4 = new Category("Drama", "/images/fmj.jpg");
+		Category category4 = new Category("Drama", "/images/fmj.jpg", null);
 		categoryRepo.save(category4);
 
 		Review review1 = new Review("The Matrix", "/images/the-matrix.jpg", category1);
