@@ -5,8 +5,10 @@
 
 <head>
 	<title>Movie Review</title>
-	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-styles.css" />
+	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-style.css" />
 	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-layout.css" />
+
+
 </head>
 
 <body>
@@ -17,9 +19,11 @@
 
 	<div>
 		<h2 th:text="${'Review ID: ' + review.id}"></h2>
+		
 		<h2 th:text="${review.movieTitle}"></h2>
 		<section>
 			<img th:src="${review.images}"></img>
+			<h2 th:text="${review.reviewText}"></h2>
 			<h2 th:text="${review.movieCategory.categoryName}"></h2>
 			<!-- review class.accessor method.category class accessor methods -->
 		</section>

@@ -4,17 +4,20 @@
 
 <head>
 	<title>Movie Reviews</title>
-	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-styles.css" />
+	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-style.css" />
 	<link rel="stylesheet" type="text/css" href="./reviews-full-stack-layout.css" />
+	
+
 </head>
 
 <body>
+	<div class="container">
 	<header>
-		<h1>Midnite Owl's Movie Reviews</h1>
+		Midnite Owl's Movie Reviews
 	</header>
-	<p>Thanks for visiting my movie review page!</p>
+	<h2>Thanks for visiting my movie review page!</h2>
 	<div th:each="category: ${categories}">
-	<!-- category(whatever you want to name it)
+	<!-- category((iterateable value)give it a singular name)
 	{categories}==link to @RequestMapping in controller- -->
 		
 		<a th:href="@{/category(id=${category.id})}" th:text="${category.categoryName}"></a>
@@ -22,5 +25,6 @@
 		((id=${category.id})==go to the category class and get the id of the category
 		"${category.categoryName}" == list all the categories in category class by name-->	
 	</div>
+</div>
 </body>
 </html>
