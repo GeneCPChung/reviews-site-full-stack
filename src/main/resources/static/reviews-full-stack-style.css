@@ -1,32 +1,15 @@
-
-
 a {
-	color: #7A6D67;
-	font-family: Georgia;
-}
-
-a:link {
-		text-decoration: none;
-	}
-
-a:visited {
-	color: #7A6D67;
+	text-decoration: none;
+	color: #380117;
 }
 
 a:hover {
-	color: #BBA88F;
-/*	font-size: 115%;*/
-	border: 2px solid #F4F3F4;
-	border-radius: 5px;
-	}
-
-a:active {
-	color: #F4F3F4;
+	color: #A4A4F7;
 }
 
 body {
 	background-image: radial-gradient(circle at center, rgba(63, 53, 57, 0.75),
-		#F4F3F4),url("/images/movie-reel.jpg");
+		#19193B),url("/images/movie-reel.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -35,7 +18,12 @@ body {
 }
 
 h1 {
-	
+	color: #380117;
+}
+
+h2 {
+	color: #380117;
+	font-size: 175%;
 }
 
 h4 {
@@ -44,12 +32,12 @@ h4 {
 	}
 
 header {
-	background: radial-gradient(circle at center, #F4F3F4, #7A6D67, #3F3539);
+	background: radial-gradient(circle at center, #D2D2F6, #4949B5, #030326);
 		border-radius: 10px;
 		border: 2px solid #F4F3F4;
-		font-size: 150%;
+		font-size: 100%;
 		font-family: "Verdana";
-		padding: 10px;
+		padding: 1rem;
 		text-align: center;
 		width: relative;
 }
@@ -57,4 +45,9 @@ header {
 ol,
 ul {
 	list-style-type: none;
+}
+
+.categories-item-2 {
+	font-size: 150%;
+	color: #380117;
 }

@@ -46,15 +46,15 @@ public class ReviewsPopulator implements CommandLineRunner {
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus rutrum dolor aliquam rhoncus. Donec tempor eros orci, vitae tincidunt ex laoreet quis. Sed et rutrum tellus, a cursus sem.",
 				category1);
 		reviewRepo.save(review5);
-		Review review6 = new Review("Titanic", "/images/beaches.jpg",
+		Review review6 = new Review("Titanic", "/images/titanic.jpg",
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus rutrum dolor aliquam rhoncus. Donec tempor eros orci, vitae tincidunt ex laoreet quis. Sed et rutrum tellus, a cursus sem.",
 				category2);
 		reviewRepo.save(review6);
-		Review review7 = new Review("Big Trouble in Little China", "/images/dumb-and-dumber.jpg",
+		Review review7 = new Review("Big Trouble in Little China", "/images/big-trouble.jpg",
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus rutrum dolor aliquam rhoncus. Donec tempor eros orci, vitae tincidunt ex laoreet quis. Sed et rutrum tellus, a cursus sem.",
 				category3);
 		reviewRepo.save(review7);
-		Review review8 = new Review("The Godfather", "/images/fmj.jpg",
+		Review review8 = new Review("The Godfather", "/images/godfather.jpg",
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed risus rutrum dolor aliquam rhoncus. Donec tempor eros orci, vitae tincidunt ex laoreet quis. Sed et rutrum tellus, a cursus sem.",
 				category4);
 		reviewRepo.save(review8);
